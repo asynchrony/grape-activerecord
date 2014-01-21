@@ -14,4 +14,13 @@ and after filter in GrapeAPI to maintain ActiveRecord connection pools."
 
   s.homepage    = 'https://github.com/asynchrony/grape-activerecord'
   s.license     = 'MIT'
+
+  s.required_ruby_version = ">= 1.9.2"
+
+  s.add_dependency "grape", ">= 0.6"
+  s.add_dependency "activerecord", ">= 4.0"
+
+  s.add_development_dependency "rake"
+  s.add_development_dependency "rspec", ">= 2.14"
+  s.add_development_dependency "sqlite3"
 end
